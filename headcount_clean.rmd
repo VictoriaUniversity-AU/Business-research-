@@ -1,0 +1,31 @@
+---
+title: "research headcount"
+author: "Philip Thilani-s4629240"
+date: "5/17/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r}
+library(janitor)
+library(dplyr)
+
+
+str(df)  # structure of data object, data types for each column
+
+is.na(NA)
+
+clean1 <- na.omit(Headcount_Filtered_Connors)
+
+clean2<-clean_names(clean1)
+colnames(clean1)
+
+
+
+```
+
